@@ -1,0 +1,17 @@
+{
+  // TypeScript 配置（用于 Node.js 环境的配置文件）
+  "compilerOptions": {
+    // 复合项目
+    "composite": true,
+    // 跳过库文件的类型检查
+    "skipLibCheck": true,
+    // 模块系统
+    "module": "ESNext",
+    // 模块解析策略
+    "moduleResolution": "bundler",
+    // 允许合成默认导入
+    "allowSyntheticDefaultImports": true
+  },
+  // 包含的文件（Vite 配置文件）
+  "include": ["vite.config.ts"]
+}

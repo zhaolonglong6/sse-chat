@@ -1,0 +1,51 @@
+{
+  // TypeScript 编译器配置
+  "compilerOptions": {
+    // 目标 JavaScript 版本
+    "target": "ES2020",
+    // 使用捆绑器进行模块解析
+    "useDefineForClassFields": true,
+    // 模块系统
+    "module": "ESNext",
+    // 库文件
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    // 跳过库文件的类型检查
+    "skipLibCheck": true,
+
+    /* 模块解析选项 */
+    // 模块解析策略：bundler（用于打包工具）
+    "moduleResolution": "bundler",
+    // 允许导入 .json 文件
+    "resolveJsonModule": true,
+    // 隔离模块（每个文件作为单独的模块）
+    "isolatedModules": true,
+    // 不生成输出文件（由 Vite 处理）
+    "noEmit": true,
+    // 启用 JSX 支持
+    "jsx": "preserve",
+
+    /* 类型检查选项 */
+    // 启用严格模式
+    "strict": true,
+    // 禁止隐式的 any 类型
+    "noImplicitAny": true,
+    // 严格的 null 检查
+    "strictNullChecks": true,
+    // 禁止未使用的局部变量
+    "noUnusedLocals": true,
+    // 禁止未使用的参数
+    "noUnusedParameters": true,
+    // 禁止隐式返回
+    "noImplicitReturns": true,
+    // 禁止 switch 语句的 fallthrough
+    "noFallthroughCasesInSwitch": true,
+
+    /* Vue 相关配置 */
+    // 启用 Vue 的 JSX 支持
+    "types": ["vite/client"]
+  },
+  // 包含的文件
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  // 引用 Vue 类型定义
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
